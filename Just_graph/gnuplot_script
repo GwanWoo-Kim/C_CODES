@@ -1,0 +1,12 @@
+set term postscript eps color enhanced  background rgb "#FFFFFF"
+set output "Grutonic_tween_star.eps"
+set encoding iso_8859_1
+set xr [-00025.00000:+00025.00000]
+set nokey
+set lmargin 9.0
+set yr [-003.000:+003.000]
+set format x "%3.1f"
+set xzeroaxis                                                                              
+plot  (8/(exp(-1*x)+1)-4)*-0.2*cos(0.1*x)*exp(-0.003*x*x)
+#plot  (2-4/(exp(x)+1))*(0.5*sin(x)+1)*(0.5*sin(x)-1)*exp(-0.005*x*x)
+
